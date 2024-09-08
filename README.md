@@ -52,3 +52,22 @@ Note that [official releases][] are [published to Maven Central][].
 [published to Maven Central]: https://search.maven.org/search?q=g:io.grpc%20AND%20grpc-kotlin
 [Quick start]: https://grpc.io/docs/languages/kotlin/quickstart/
 [Maven / Gradle Plugin instructions]: compiler/README.md
+
+----
+
+#### Running the project (from Terminal):
+`Source codes are in 'examples' folder.`
+Note each to be done in discrete Terminal windows.
+
+##### Building .proto files
+1. **Go to examples** directory: ```cd examples```
+2. Compile client and sever code: ```./gradlew installDist```
+
+##### Running server:
+1. **Go to examples** directory: ```cd examples```
+2. Run Server ```./server/build/install/server/bin/hello-world-server``` to get _Server started, listening on 50051_
+
+##### Running client:
+1. **Go to examples** directory: ```cd examples```
+2. Run ```./client/build/install/client/bin/hello-world-client``` to get _Received: Hello world_
+
